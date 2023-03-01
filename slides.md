@@ -291,6 +291,15 @@ class Book implements ResourceInterface
 | app_backend_book_bulk_delete        | DELETE          | /admin/books/bulk-delete |               
 | app_backend_book_delete             | DELETE          | /admin/books/{id}        |
 
+
+---
+
+# Générer une grid
+
+```bash
+$ bin/console make:grid
+```
+
 ---
 transition: fade
 ---
@@ -641,4 +650,22 @@ public function buildGrid(GridBuilderInterface $gridBuilder): void
 ---
 layout: image
 image: ./assets/images/search_filter.png
+transition: fade
+---
+
+---
+layout: image
+image: ./assets/images/filter_details.png
+transition: fade
+---
+
+---
+layout: image
+image: ./assets/images/search_value.png
+transition: fade
+---
+
+---
+layout: image
+image: ./assets/images/filtered_books.png
 ---
