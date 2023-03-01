@@ -669,3 +669,169 @@ transition: fade
 layout: image
 image: ./assets/images/filtered_books.png
 ---
+
+---
+transition: fade
+---
+
+```php
+#[ApiResource(
+    normalizationContext: ['groups' => 'book:read']
+)]
+#[Get]
+#[GetCollection]
+#[Post]
+#[Put]
+#[Patch]
+#[Delete]
+class Book implements ResourceInterface
+{
+    // [...]
+}
+```
+
+---
+transition: fade
+---
+
+```php {1-3}
+#[ApiResource(
+    normalizationContext: ['groups' => 'book:read']
+)]
+#[Get]
+#[GetCollection]
+#[Post]
+#[Put]
+#[Patch]
+#[Delete]
+class Book implements ResourceInterface
+{
+    // [...]
+}
+```
+
+---
+transition: fade
+---
+
+```php {4}
+#[ApiResource(
+    normalizationContext: ['groups' => 'book:read']
+)]
+#[Get]
+#[GetCollection]
+#[Post]
+#[Put]
+#[Patch]
+#[Delete]
+class Book implements ResourceInterface
+{
+    // [...]
+}
+```
+
+---
+transition: fade
+---
+
+```php {5}
+#[ApiResource(
+    normalizationContext: ['groups' => 'book:read']
+)]
+#[Get]
+#[GetCollection]
+#[Post]
+#[Put]
+#[Patch]
+#[Delete]
+class Book implements ResourceInterface
+{
+    // [...]
+}
+```
+
+---
+transition: fade
+---
+
+```php {6}
+#[ApiResource(
+    normalizationContext: ['groups' => 'book:read']
+)]
+#[Get]
+#[GetCollection]
+#[Post]
+#[Put]
+#[Patch]
+#[Delete]
+class Book implements ResourceInterface
+{
+    // [...]
+}
+```
+
+---
+transition: fade
+---
+
+```php {7}
+#[ApiResource(
+    normalizationContext: ['groups' => 'book:read']
+)]
+#[Get]
+#[GetCollection]
+#[Post]
+#[Put]
+#[Patch]
+#[Delete]
+class Book implements ResourceInterface
+{
+    // [...]
+}
+```
+
+---
+transition: fade
+---
+
+```php {8}
+#[ApiResource(
+    normalizationContext: ['groups' => 'book:read']
+)]
+#[Get]
+#[GetCollection]
+#[Post]
+#[Put]
+#[Patch]
+#[Delete]
+class Book implements ResourceInterface
+{
+    // [...]
+}
+```
+
+---
+transition: fade
+---
+
+```php {9}
+#[ApiResource(
+    normalizationContext: ['groups' => 'book:read']
+)]
+#[Get]
+#[GetCollection]
+#[Post]
+#[Put]
+#[Patch]
+#[Delete]
+class Book implements ResourceInterface
+{
+    // [...]
+}
+```
+
+---
+layout: image
+image: ./assets/images/book_api_doc.png
+transition: fade
+---
