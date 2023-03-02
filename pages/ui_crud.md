@@ -43,7 +43,7 @@ public function buildGrid(GridBuilderInterface $gridBuilder): void
     $gridBuilder
         ->orderBy('name')
         ->addFilter(
-            StringFilter::create('search', ['name'])
+            StringFilter::create(name: 'search', fields: ['name'])
                 ->setLabel('Search')
         )
         ->addField(
@@ -77,11 +77,4 @@ transition: fade
 ---
 layout: image
 image: ./assets/images/filtered_books.png
----
-
----
-layout: image
-image: https://api-platform.com/logo.png
----
-
 ---

@@ -1,3 +1,7 @@
+---
+transition: fade
+---
+
 # Rapid Application Development
 
 ```php

@@ -1,3 +1,10 @@
+---
+layout: image
+image: https://api-platform.com/logo.png
+---
+
+---
+
 # Monofony API Pack
 
 ```shell
