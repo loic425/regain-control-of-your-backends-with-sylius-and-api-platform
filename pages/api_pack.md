@@ -178,5 +178,4 @@ class Book implements ResourceInterface
 ---
 layout: image
 image: ./assets/images/book_api_doc.png
-transition: fade
 ---

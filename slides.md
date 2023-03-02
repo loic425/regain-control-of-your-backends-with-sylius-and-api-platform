@@ -69,3 +69,7 @@ src: ./pages/ui_crud.md
 ---
 src: ./pages/api_pack.md
 ---
+
+---
+src: ./pages/resource_operation.md
+---
