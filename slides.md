@@ -626,7 +626,7 @@ image: ./assets/images/flash_message.png
 
 ---
 
-## Grid
+## Et un petit search input ?
 
 ```php {5-8}
 public function buildGrid(GridBuilderInterface $gridBuilder): void
@@ -671,8 +671,32 @@ image: ./assets/images/filtered_books.png
 ---
 
 ---
+layout: image
+image: https://api-platform.com/logo.png
+---
+
+---
+
+# Monofony API Pack
+
+```shell
+$ composer require monofony/api-pack "^0.10"
+```
+
+<br />
+
+* voir [l'installation détaillée dans la doc](https://docs.monofony.com/current/setup/application).
+
+---
+layout: image
+image: ./assets/images/api_pack.png
+---
+
+---
 transition: fade
 ---
+
+# Book resource
 
 ```php
 #[ApiResource(
