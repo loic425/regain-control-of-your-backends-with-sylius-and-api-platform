@@ -25,3 +25,7 @@ src: ./07_resource_operation/06_provider.md
 --- 
 src: ./07_resource_operation/07_processor.md
 ---
+
+--- 
+src: ./07_resource_operation/08_responder.md
+---
