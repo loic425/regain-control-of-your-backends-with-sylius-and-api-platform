@@ -60,7 +60,8 @@ interface ProviderInterface
 
 ---
 
-```php {10}
+```php {11}
+// src/BoardGameBlog/Infrastructure/Sylius/Resource/BoardGameResource.php
 #[Resource(
     alias: 'app.board_game',
     section: 'admin',
@@ -80,6 +81,7 @@ transition: fade
 ---
 
 ```php
+// src/BoardGameBlog/Infrastructure/Sylius/State/Http/Provider/BoardGameItemProvider.php
 final class BoardGameItemProvider implements ProviderInterface
 {
     public function __construct(
@@ -105,7 +107,8 @@ final class BoardGameItemProvider implements ProviderInterface
 transition: fade
 ---
 
-```php {10-11}
+```php {11-12}
+// src/BoardGameBlog/Infrastructure/Sylius/State/Http/Provider/BoardGameItemProvider.php
 final class BoardGameItemProvider implements ProviderInterface
 {
     public function __construct(
@@ -131,7 +134,8 @@ final class BoardGameItemProvider implements ProviderInterface
 transition: fade
 ---
 
-```php {13}
+```php {14}
+// src/BoardGameBlog/Infrastructure/Sylius/State/Http/Provider/BoardGameItemProvider.php
 final class BoardGameItemProvider implements ProviderInterface
 {
     public function __construct(
@@ -157,7 +161,8 @@ final class BoardGameItemProvider implements ProviderInterface
 transition: fade
 ---
 
-```php {15}
+```php {16}
+// src/BoardGameBlog/Infrastructure/Sylius/State/Http/Provider/BoardGameItemProvider.php
 final class BoardGameItemProvider implements ProviderInterface
 {
     public function __construct(
@@ -181,7 +186,8 @@ final class BoardGameItemProvider implements ProviderInterface
 
 ---
 
-```php {17}
+```php {18}
+// src/BoardGameBlog/Infrastructure/Sylius/State/Http/Provider/BoardGameItemProvider.php
 final class BoardGameItemProvider implements ProviderInterface
 {
     public function __construct(

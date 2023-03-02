@@ -39,25 +39,29 @@ avec Sylius & API-Platform
 </div>
 
 ---
-src: ./pages/index.md
+src: ./pages/01_index.md
 ---
 
 ---
-src: ./pages/sylius_resource.md
+src: ./pages/02_monofony.md
 ---
 
 ---
-src: ./pages/sylius_grid.md
+src: ./pages/03_resource.md
 ---
 
 ---
-src: ./pages/ui_crud.md
+src: ./pages/04_grid.md
 ---
 
 ---
-src: ./pages/api_pack.md
+src: ./pages/05_ui_demo.md
 ---
 
 ---
-src: ./pages/resource_operation.md
+src: ./pages/06_api_pack.md
+---
+
+---
+src: ./pages/07_resource_operation.md
 ---

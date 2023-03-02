@@ -4,7 +4,21 @@ transition: fade
 
 # Différences
 
-Implémentation courante
+---
+transition: fade
+---
+
+# Différences
+
+Précédente implémentation
+
+---
+transition: fade
+---
+
+# Différences
+
+Précédente implémentation
 
 * ResourceController avec des actions
 
@@ -14,7 +28,7 @@ transition: fade
 
 # Différences
 
-Implémentation courante
+Précédente implémentation
 
 * ResourceController avec des actions
     * showAction
@@ -25,7 +39,7 @@ transition: fade
 
 # Différences
 
-Implémentation courante
+Précédente implémentation
 
 * ResourceController avec des actions
     * showAction
@@ -37,7 +51,7 @@ transition: fade
 
 # Différences
 
-Implémentation courante
+Précédente implémentation
 
 * ResourceController avec des actions
     * showAction
@@ -50,7 +64,7 @@ transition: fade
 
 # Différences
 
-Implémentation courante
+Précédente implémentation
 
 * ResourceController avec des actions
     * showAction
@@ -64,7 +78,7 @@ transition: fade
 
 # Différences
 
-Implémentation courante
+Précédente implémentation
 
 * ResourceController avec des actions
     * showAction
@@ -79,7 +93,7 @@ transition: fade
 
 # Différences
 
-Implémentation courante
+Précédente implémentation
 
 * ResourceController avec des actions
     * showAction
@@ -95,7 +109,7 @@ transition: fade
 
 # Différences
 
-Implémentation courante
+Précédente implémentation
 
 * ResourceController avec des actions 
   * showAction
@@ -112,7 +126,7 @@ transition: fade
 
 # Différences
 
-Implémentation courante
+Précédente implémentation
 
 * ResourceController avec des actions
     * showAction
@@ -129,7 +143,7 @@ Implémentation courante
 
 # Différences
 
-Implémentation courante
+Précédente implémentation
 
 * ResourceController avec des actions
   * showAction
@@ -149,6 +163,7 @@ transition: fade
 ---
 
 ```php
+// vendor/sylius/resource-bundle/src/Bundle/Controller/ResourceController.php
 public function showAction(Request $request): Response
 {
     $configuration = $this->requestConfigurationFactory->create($this->metadata, $request);
@@ -179,38 +194,8 @@ public function showAction(Request $request): Response
 transition: fade
 ---
 
-```php {3}
-public function showAction(Request $request): Response
-{
-    $configuration = $this->requestConfigurationFactory->create($this->metadata, $request);
-
-    $this->isGrantedOr403($configuration, ResourceActions::SHOW);
-    $resource = $this->findOr404($configuration);
-
-    $event = $this->eventDispatcher->dispatch(ResourceActions::SHOW, $configuration, $resource);
-    $eventResponse = $event->getResponse();
-    if (null !== $eventResponse) {
-        return $eventResponse;
-    }
-
-    if ($configuration->isHtmlRequest()) {
-        return $this->render($configuration->getTemplate(ResourceActions::SHOW . '.html'), [
-            'configuration' => $configuration,
-            'metadata' => $this->metadata,
-            'resource' => $resource,
-            $this->metadata->getName() => $resource,
-        ]);
-    }
-
-    return $this->createRestView($configuration, $resource);
-}
-```
-
----
-transition: fade
----
-
-```php {5}
+```php {4}
+// vendor/sylius/resource-bundle/src/Bundle/Controller/ResourceController.php
 public function showAction(Request $request): Response
 {
     $configuration = $this->requestConfigurationFactory->create($this->metadata, $request);
@@ -242,6 +227,7 @@ transition: fade
 ---
 
 ```php {6}
+// vendor/sylius/resource-bundle/src/Bundle/Controller/ResourceController.php
 public function showAction(Request $request): Response
 {
     $configuration = $this->requestConfigurationFactory->create($this->metadata, $request);
@@ -272,38 +258,8 @@ public function showAction(Request $request): Response
 transition: fade
 ---
 
-```php {6}
-public function showAction(Request $request): Response
-{
-    $configuration = $this->requestConfigurationFactory->create($this->metadata, $request);
-
-    $this->isGrantedOr403($configuration, ResourceActions::SHOW);
-    $resource = $this->findOr404($configuration); // Using Doctrine
-
-    $event = $this->eventDispatcher->dispatch(ResourceActions::SHOW, $configuration, $resource);
-    $eventResponse = $event->getResponse();
-    if (null !== $eventResponse) {
-        return $eventResponse;
-    }
-
-    if ($configuration->isHtmlRequest()) {
-        return $this->render($configuration->getTemplate(ResourceActions::SHOW . '.html'), [
-            'configuration' => $configuration,
-            'metadata' => $this->metadata,
-            'resource' => $resource,
-            $this->metadata->getName() => $resource,
-        ]);
-    }
-
-    return $this->createRestView($configuration, $resource);
-}
-```
-
----
-transition: fade
----
-
-```php {8-12}
+```php {7}
+// vendor/sylius/resource-bundle/src/Bundle/Controller/ResourceController.php
 public function showAction(Request $request): Response
 {
     $configuration = $this->requestConfigurationFactory->create($this->metadata, $request);
@@ -334,7 +290,8 @@ public function showAction(Request $request): Response
 transition: fade
 ---
 
-```php {14-21}
+```php {9-13}
+// vendor/sylius/resource-bundle/src/Bundle/Controller/ResourceController.php
 public function showAction(Request $request): Response
 {
     $configuration = $this->requestConfigurationFactory->create($this->metadata, $request);
@@ -365,7 +322,40 @@ public function showAction(Request $request): Response
 transition: fade
 ---
 
-```php {23}
+```php {15-22}
+// vendor/sylius/resource-bundle/src/Bundle/Controller/ResourceController.php
+public function showAction(Request $request): Response
+{
+    $configuration = $this->requestConfigurationFactory->create($this->metadata, $request);
+
+    $this->isGrantedOr403($configuration, ResourceActions::SHOW);
+    $resource = $this->findOr404($configuration);
+
+    $event = $this->eventDispatcher->dispatch(ResourceActions::SHOW, $configuration, $resource);
+    $eventResponse = $event->getResponse();
+    if (null !== $eventResponse) {
+        return $eventResponse;
+    }
+
+    if ($configuration->isHtmlRequest()) {
+        return $this->render($configuration->getTemplate(ResourceActions::SHOW . '.html'), [
+            'configuration' => $configuration,
+            'metadata' => $this->metadata,
+            'resource' => $resource,
+            $this->metadata->getName() => $resource,
+        ]);
+    }
+
+    return $this->createRestView($configuration, $resource);
+}
+```
+
+---
+transition: fade
+---
+
+```php {24}
+// vendor/sylius/resource-bundle/src/Bundle/Controller/ResourceController.php
 public function showAction(Request $request): Response
 {
     $configuration = $this->requestConfigurationFactory->create($this->metadata, $request);
@@ -394,7 +384,8 @@ public function showAction(Request $request): Response
 
 ---
 
-```php {23}
+```php {24}
+// vendor/sylius/resource-bundle/src/Bundle/Controller/ResourceController.php
 public function showAction(Request $request): Response
 {
     $configuration = $this->requestConfigurationFactory->create($this->metadata, $request);

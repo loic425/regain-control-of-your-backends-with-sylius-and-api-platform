@@ -6,6 +6,14 @@ transition: fade
 
 Nouvelle implémentation
 
+---
+transition: fade
+---
+
+# Différences
+
+Nouvelle implémentation
+
 * PlaceHolderAction avec...
 
 ---

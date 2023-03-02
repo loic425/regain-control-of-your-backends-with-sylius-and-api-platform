@@ -42,7 +42,8 @@ interface ProcessorInterface
 
 ---
 
-```php {9-10}
+```php {10-11}
+// src/BoardGameBlog/Infrastructure/Sylius/Resource/BoardGameResource.php
 #[Resource(
     alias: 'app.board_game',
     section: 'admin',
@@ -62,6 +63,7 @@ transition: fade
 ---
 
 ```php
+// src/BoardGameBlog/Infrastructure/Sylius/State/Http/Processor/DeleteBoardGameProcessor.php
 final class DeleteBoardGameProcessor implements ProcessorInterface
 {
     public function __construct(

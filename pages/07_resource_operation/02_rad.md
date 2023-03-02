@@ -4,6 +4,12 @@ transition: fade
 
 # Rapid Application Development
 
+---
+transition: fade
+---
+
+# Rapid Application Development
+
 ```php
 #[ORM\Entity(repositoryClass: BookRepository::class)]
 #[Resource(

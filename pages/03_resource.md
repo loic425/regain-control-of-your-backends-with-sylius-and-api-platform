@@ -1,15 +1,4 @@
 ---
-layout: image
-image: ./assets/images/dashboard.png
-transition: fade
----
-
----
-layout: image
-image: ./assets/images/administrators.png
----
-
----
 transition: fade
 ---
 
