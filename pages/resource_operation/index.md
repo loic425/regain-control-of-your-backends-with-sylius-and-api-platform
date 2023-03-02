@@ -1,6 +1,8 @@
 ![Logo](https://sylius.com/wp-content/uploads/2021/03/sylius-logo_sylius-logo-dark-1536x634.jpg)
 
 ---
+transition: fade
+---
 
 # La suite...
 
