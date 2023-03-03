@@ -4,23 +4,11 @@ transition: fade
 
 # Arhictecture hexagonale
 
----
-transition: fade
----
-
-# Arhictecture hexagonale
+<v-clicks>
 
 Model
 
----
-transition: fade
----
-
-# Arhictecture hexagonale
-
-Model
-
-```php
+```php {all|5-6|8-13|15-19}
 // src/BoardGameBlog/Domain/Model/BoardGame.php
 #[ORM\Entity]
 class BoardGame
@@ -45,107 +33,8 @@ class BoardGame
 }
 ```
 
----
-transition: fade
----
+</v-clicks>
 
-# Arhictecture hexagonale
-
-Model
-
-```php {5-6}
-// src/BoardGameBlog/Domain/Model/BoardGame.php
-#[ORM\Entity]
-class BoardGame
-{
-    #[ORM\Embedded(columnPrefix: false)]
-    private BoardGameId $id;
-
-    public function __construct(
-        #[ORM\Embedded(columnPrefix: false)]
-        private BoardGameName $name,
-    ) {
-        $this->id = new BoardGameId();
-    }
-
-    public function update(
-        ?BoardGameName $name = null,
-    ): void {
-        $this->name = $name ?? $this->name;
-    }
-    
-    // [...]
-}
-```
-
----
-transition: fade
----
-
-# Arhictecture hexagonale
-
-Model
-
-```php {8-13}
-// src/BoardGameBlog/Domain/Model/BoardGame.php
-#[ORM\Entity]
-class BoardGame
-{
-    #[ORM\Embedded(columnPrefix: false)]
-    private BoardGameId $id;
-
-    public function __construct(
-        #[ORM\Embedded(columnPrefix: false)]
-        private BoardGameName $name,
-    ) {
-        $this->id = new BoardGameId();
-    }
-
-    public function update(
-        ?BoardGameName $name = null,
-    ): void {
-        $this->name = $name ?? $this->name;
-    }
-    
-    // [...]
-}
-```
-
----
-transition: fade
----
-
-# Arhictecture hexagonale
-
-Model
-
-```php {15-19}
-// src/BoardGameBlog/Domain/Model/BoardGame.php
-#[ORM\Entity]
-class BoardGame
-{
-    #[ORM\Embedded(columnPrefix: false)]
-    private BoardGameId $id;
-
-    public function __construct(
-        #[ORM\Embedded(columnPrefix: false)]
-        private BoardGameName $name,
-    ) {
-        $this->id = new BoardGameId();
-    }
-
-    public function update(
-        ?BoardGameName $name = null,
-    ): void {
-        $this->name = $name ?? $this->name;
-    }
-    
-    // [...]
-}
-```
-
----
-transition: fade
 ---
 
 # Arhictecture hexagonale
@@ -172,21 +61,10 @@ class BoardGame
 ```
 
 ---
-transition: fade
----
 
 # Arhictecture hexagonale
 
----
-transition: fade
----
-
-# Arhictecture hexagonale
-
-Resource
-
----
-# Arhictecture hexagonale
+<v-clicks>
 
 Resource
 
@@ -206,3 +84,7 @@ Resource
 #[Delete(/*...*/)]
 final class BoardGameResource implements ResourceInterface
 ```
+
+</v-clicks>
+
+

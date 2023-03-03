@@ -4,144 +4,7 @@ transition: fade
 
 # Différences
 
----
-transition: fade
----
-
-# Différences
-
-Précédente implémentation
-
----
-transition: fade
----
-
-# Différences
-
-Précédente implémentation
-
-* ResourceController avec des actions
-
----
-transition: fade
----
-
-# Différences
-
-Précédente implémentation
-
-* ResourceController avec des actions
-    * showAction
-
----
-transition: fade
----
-
-# Différences
-
-Précédente implémentation
-
-* ResourceController avec des actions
-    * showAction
-    * indexAction
-
----
-transition: fade
----
-
-# Différences
-
-Précédente implémentation
-
-* ResourceController avec des actions
-    * showAction
-    * indexAction
-    * createAction
-
----
-transition: fade
----
-
-# Différences
-
-Précédente implémentation
-
-* ResourceController avec des actions
-    * showAction
-    * indexAction
-    * createAction
-    * updateAction
-
----
-transition: fade
----
-
-# Différences
-
-Précédente implémentation
-
-* ResourceController avec des actions
-    * showAction
-    * indexAction
-    * createAction
-    * updateAction
-    * deleteAction
-
----
-transition: fade
----
-
-# Différences
-
-Précédente implémentation
-
-* ResourceController avec des actions
-    * showAction
-    * indexAction
-    * createAction
-    * updateAction
-    * deleteAction
-    * bulkDeleteAction
-
----
-transition: fade
----
-
-# Différences
-
-Précédente implémentation
-
-* ResourceController avec des actions 
-  * showAction
-  * indexAction
-  * createAction
-  * updateAction  
-  * deleteAction
-  * bulkDeleteAction
-  * applyStateMachineTransitionAction
-
----
-transition: fade
----
-
-# Différences
-
-Précédente implémentation
-
-* ResourceController avec des actions
-    * showAction
-    * indexAction
-    * createAction
-    * updateAction
-    * deleteAction
-    * bulkDeleteAction
-    * applyStateMachineTransitionAction
-
-**582 lignes de code 😯**
-
----
-
-# Différences
+<v-clicks>
 
 Précédente implémentation
 
@@ -158,8 +21,8 @@ Précédente implémentation
 
 **2808 lignes de tests pour un même service 😱**
 
----
-transition: fade
+</v-clicks>
+
 ---
 
 ```php {all|4|6|7|9-13|15-22|24}

@@ -4,17 +4,13 @@ transition: fade
 
 # Différences
 
-Nouvelle implémentation
-
----
-transition: fade
----
-
-# Différences
+<v-clicks>
 
 Nouvelle implémentation
 
 * PlaceHolderAction avec...
+
+</v-clicks>
 
 ---
 
