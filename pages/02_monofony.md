@@ -5,11 +5,11 @@ image: https://ressources.mobizel.com/wp-content/uploads/2019/12/monofony-banner
 
 ---
 layout: image
-image: ./assets/images/dashboard.png
+image: /assets/images/dashboard.png
 transition: fade
 ---
 
 ---
 layout: image
-image: ./assets/images/administrators.png
+image: /assets/images/administrators.png
 ---

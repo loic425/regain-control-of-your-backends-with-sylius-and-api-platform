@@ -17,7 +17,7 @@ $ composer require monofony/api-pack "^0.10"
 
 ---
 layout: image
-image: ./assets/images/api_pack.png
+image: /assets/images/api_pack.png
 ---
 
 ---
@@ -184,5 +184,5 @@ class Book implements ResourceInterface
 
 ---
 layout: image
-image: ./assets/images/book_api_doc.png
+image: /assets/images/book_api_doc.png
 ---

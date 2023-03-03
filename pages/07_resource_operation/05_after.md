@@ -87,7 +87,7 @@ final class PlaceHolderAction
 
 ---
 layout: image
-image: ./../assets/images/fake_end.png
+image: /../assets/images/fake_end.png
 ---
 
 ---
