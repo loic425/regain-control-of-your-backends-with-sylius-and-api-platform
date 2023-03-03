@@ -25,50 +25,8 @@ Nouvelle implémentation
 * PlaceHolderAction avec une seule action ! ❤️
 
 ---
-transition: fade
----
 
-```php
-
-namespace Sylius\Component\Resource\Action;
-
-final class PlaceHolderAction
-{
-    /**
-     * @param mixed $data
-     */
-    public function __invoke($data = null): mixed
-    {
-        return $data;
-    }
-}
-
-```
-
----
-transition: fade
----
-
-```php {9}
-
-namespace Sylius\Component\Resource\Action;
-
-final class PlaceHolderAction
-{
-    /**
-     * @param mixed $data
-     */
-    public function __invoke($data = null): mixed
-    {
-        return $data;
-    }
-}
-
-```
-
----
-
-```php {11}
+```php {all|9|11}
 
 namespace Sylius\Component\Resource\Action;
 
