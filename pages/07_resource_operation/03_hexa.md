@@ -68,7 +68,7 @@ class BoardGame
 
 Resource
 
-```php
+```php {all|9|10|11|12|13}
 // src/BoardGameBlog/Infrastructure/Sylius/Resource/BoardGameResource.php
 #[Resource(
     alias: 'app.board_game',

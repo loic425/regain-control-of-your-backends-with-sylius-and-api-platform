@@ -2,6 +2,8 @@
 
 # State provider
 
+<v-clicks>
+
 ```php
 /**
  * Retrieves data from a persistence layer.
@@ -12,49 +14,12 @@ interface ProviderInterface
 {
     public function provide(Operation $operation, Context $context): object|iterable|null;
 }
-
-```
-
----
-transition: fade
----
-
-# State provider
-
-```php {8}
-/**
- * Retrieves data from a persistence layer.
- *
- * @experimental
- */
-interface ProviderInterface
-{
-    public function provide(Operation $operation, Context $context): object|iterable|null;
-}
-
-```
-
-* Operation *(Create, Show, Index, Update, Delete, BulkDelete...)*
-
----
-
-# State provider
-
-```php {8}
-/**
- * Retrieves data from a persistence layer.
- *
- * @experimental
- */
-interface ProviderInterface
-{
-    public function provide(Operation $operation, Context $context): object|iterable|null;
-}
-
 ```
 
 * Operation *(Create, Show, Index, Update, Delete, BulkDelete...)*
 * Context: ArrayObject *(RequestOption, ResourceClassOption)*
+
+</v-clicks>
 
 ---
 

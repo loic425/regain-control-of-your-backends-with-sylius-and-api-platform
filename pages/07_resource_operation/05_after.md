@@ -1,24 +1,14 @@
----
-transition: fade
----
-
 # Différences
 
 <v-clicks>
 
 Nouvelle implémentation
 
-* PlaceHolderAction avec...
+PlaceHolderAction avec... 
+
+une seule action ! ❤️
 
 </v-clicks>
-
----
-
-# Différences
-
-Nouvelle implémentation
-
-* PlaceHolderAction avec une seule action ! ❤️
 
 ---
 
