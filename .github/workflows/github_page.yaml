@@ -44,7 +44,7 @@ jobs:
               run: npm ci
 
             - name: Build blog
-              run:  npx slidev build
+              run:  npx slidev build --base=/regain-control-of-your-backends-with-sylius-and-api-platform/
 
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v1
