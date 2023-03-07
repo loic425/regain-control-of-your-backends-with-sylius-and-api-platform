@@ -131,7 +131,7 @@ transition: fade
 ---
 
 ```php {all|4|6|8|10|11}
-// src/BoardGameBlog/Infrastructure/Sylius/State/Cli/Responder/BoardGameItemResponder.php
+// src/BoardGameBlog/Infrastructure/Sylius/State/Cli/Responder/BookItemResponder.php
 public function respond(mixed $data, Operation $operation, Context $context): mixed
 {
     $cliOption = $context->get(CliOption::class);
@@ -150,7 +150,7 @@ public function respond(mixed $data, Operation $operation, Context $context): mi
 ---
 
 ```php {all|6|8-9|11-12|14-15|17-18|20-21|23}
-// src/BoardGameBlog/Infrastructure/Sylius/State/Cli/Responder/BoardGameItemResponder.php
+// src/BoardGameBlog/Infrastructure/Sylius/State/Cli/Responder/BookItemResponder.php
 public function respond(mixed $data, Operation $operation, Context $context): mixed
 {    
     // [...]
