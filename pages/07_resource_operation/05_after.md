@@ -47,8 +47,8 @@ transition: fade
 
 # Kernel request events
 
-| Name              | Event          | Description                                                 |                 
-|-------------------|----------------|-------------------------------------------------------------|
+| Name              | Event          | Description                                                  |                 
+|-------------------|----------------|--------------------------------------------------------------|
 | AddFormatListener | kernel.request | Devine le meilleure format de réponse (content-negociation). |
 
 ---

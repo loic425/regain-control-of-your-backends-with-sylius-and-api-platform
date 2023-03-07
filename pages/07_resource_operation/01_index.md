@@ -6,7 +6,7 @@
 
 <v-clicks>
 
-* Améliorer l'UX
+* Améliorer la DX (expérience développeur)
 * Ajouter plus de souplesse
 * Adapter à vos besoins métiers
 * Détacher les resources de Doctrine
