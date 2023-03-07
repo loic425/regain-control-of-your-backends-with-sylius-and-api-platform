@@ -1,6 +1,6 @@
 ---
 layout: image-right
-image: /assets/images/akawaka.png
+image: /akawaka.png
 ---
 
 # Loïc Frémont
