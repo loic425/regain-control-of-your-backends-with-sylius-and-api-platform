@@ -37,7 +37,7 @@ class BoardGame
 
 ---
 
-# Arhictecture hexagonale
+# Architecture hexagonale
 
 Model
 
@@ -62,7 +62,7 @@ class BoardGame
 
 ---
 
-# Arhictecture hexagonale
+# Architecture hexagonale
 
 <v-clicks>
 

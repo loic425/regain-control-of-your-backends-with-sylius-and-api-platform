@@ -46,7 +46,7 @@ final class Responder implements ResponderInterface
 
 ---
 
-```php {1|4-9|11-16|18-21}
+```php {all|1|4-9|11-16|18-21}
 #[AsCommand(name: 'app:show-book')]
 final class ShowBookCommand extends Command
 {
