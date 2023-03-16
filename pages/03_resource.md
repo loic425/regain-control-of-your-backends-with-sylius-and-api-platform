@@ -1,3 +1,5 @@
+# Configurons notre première resource
+
 ---
 transition: fade
 ---
