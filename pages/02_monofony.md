@@ -4,6 +4,14 @@ image: https://ressources.mobizel.com/wp-content/uploads/2019/12/monofony-banner
 ---
 
 ---
+
+# Installation
+
+```shell
+$ composer create-project monofony/skeleton project_name
+```
+
+---
 layout: image
 image: /dashboard.png
 transition: fade
@@ -13,3 +21,12 @@ transition: fade
 layout: image
 image: /administrators.png
 ---
+
+---
+
+# Intégration continue
+
+* Github Actions
+* Circle CI
+
+![CI](/ci.png)
