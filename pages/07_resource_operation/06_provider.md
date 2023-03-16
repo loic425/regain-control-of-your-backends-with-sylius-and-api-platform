@@ -17,7 +17,7 @@ interface ProviderInterface
 ```
 
 * Operation *(Create, Show, Index, Update, Delete, BulkDelete...)*
-* Context: ArrayObject *(RequestOption, ResourceClassOption)*
+* Context: ArrayObject *(contenant des options : "RequestOption" qui contient la request)*
 
 </v-clicks>
 
